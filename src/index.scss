@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color:#E7F6FF;
+}
+.wrapper{
+	max-width: 1080px;
+	border-radius: 20px;
+	background: rgb(255, 255, 255);
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+	margin: 50px auto;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+
+	border: 1px solid rgb(234, 234, 234);
+
+	.headerWrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.headerLeft{
+		display: flex;
+		align-items: center;
+	}
+		.headerIcon h3{
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		p{
+			font-size: 12px;
+		}
+	.headerRight{
+		display: flex;
+		align-items: center;
+		}
+		img{
+			margin: 0px 10px 0px 32px;
+		}
+}
+
+main{
+	padding-left: 60px;
+	
+	.content h1{
+		font-size: 32px;
+		font-weight: 700;
+		padding: 40px 60px;
+	}
+	.snicers{
+		display: flex;
+		gap: 30px;
+	}
+	.card{
+		box-sizing: border-box;
+		border: 1px solid rgb(243, 243, 243);
+		border-radius: 40px;
+		padding: 20px;
+
+		background: rgb(255, 255, 255);
+		
+		width: 220px;
+		h5{
+			font-size: 14px;
+			font-weight: 400;
+			padding: 14px 0 14px 0;
+		}
+	}
+	.card_info{
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		p{
+			color: rgb(189, 189, 189);
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 13px;
+			text-transform: uppercase;
+		}
+}
+button{
+	cursor: pointer;
+}
+
+}
+
+
