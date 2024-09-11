@@ -10,41 +10,6 @@ body {
 	background: rgb(255, 255, 255);
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 	margin: 50px auto;
-
-}
-
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 40px 60px;
-
-	border: 1px solid rgb(234, 234, 234);
-
-	.headerWrapper{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.headerLeft{
-		display: flex;
-		align-items: center;
-	}
-	.headerIcon h3{
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-		p{
-			font-size: 12px;
-		}
-	.headerRight{
-		display: flex;
-		align-items: center;
-		}
-		img{
-			margin: 0px 10px 0px 32px;
-		}
 }
 
 main{
@@ -82,44 +47,7 @@ main{
 		gap: 25px;
 		padding-top: 40px;
 	}
-	.card{
-		box-sizing: border-box;
-		border: 1px solid rgb(243, 243, 243);
-		border-radius: 40px;
-		padding: 30px;
-		height: 100%;
 
-		background: rgb(255, 255, 255);
-		width: 220px;
-		transition: box-shadow 0.3s ease-in-out;
-
-		&:hover{
-			box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.06);
-			transform: translateY(-5px);
-		}
-
-		h3{
-			font-size: 14px;
-			font-weight: 400;
-			padding: 14px 0 14px 0;
-		}
-	}
-	.favicon{
-		position: absolute;
-		cursor: pointer;
-	}
-	.card_info{
-		display: flex;
-		justify-content: space-between;
-		align-items:center;
-		p{
-			color: rgb(189, 189, 189);
-			font-size: 11px;
-			font-weight: 500;
-			line-height: 13px;
-			text-transform: uppercase;
-		}
-}
 	button{
 		cursor: pointer;
 	}
@@ -168,7 +96,6 @@ main{
 	box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
 	padding: 30px ;
 	
-
 	h2{
 		font-size: 24px;
 		margin: 0;

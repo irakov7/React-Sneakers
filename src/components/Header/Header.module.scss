@@ -1,0 +1,32 @@
+header{
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 60px;
+
+	border: 1px solid rgb(234, 234, 234);
+
+	.headerWrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.headerLeft{
+		display: flex;
+		align-items: center;
+	}
+	.headerIcon h3{
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+		p{
+			font-size: 12px;
+		}
+	.headerRight{
+		display: flex;
+		align-items: center;
+		}
+		img{
+			margin: 0px 10px 0px 32px;
+		}
+}

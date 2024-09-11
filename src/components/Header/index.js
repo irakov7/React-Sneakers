@@ -1,14 +1,17 @@
+import styles from './Header.module.scss';
+
+
 function Header(){
 	return(
-		<div className="headerWrapper">
-				<div className="headerLeft">
+		<div className={styles.headerWrapper}>
+				<div className={styles.headerLeft}>
 					<img src="/img/logo.svg" alt="Logo"/>
-					<div className="headerIcon">
+					<div className={styles.headerIcon}>
 						<h3>REACT SNEAKERS</h3>
 						<p>The best sneakers store</p>
 					</div>	
 				</div>	
-				<ul className="headerRight">
+				<ul className={styles.headerRight}>
 					<li>
 						<img src="/img/Group.svg" alt="group"></img>
 						<span>1256 $</span>
