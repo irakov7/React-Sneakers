@@ -1,10 +1,10 @@
-function ShoppingCart(){
+function ShoppingCart(props){
 	return(
-	<div style={{display: 'none'}}  className="overlay">
+	<div  className="overlay">
 		<div className="ShoppingCart">
 				<div className="cartTop">
 					<h2>Shopping Basket</h2>
-					<img className="btnCloses" src="/img/btn-remuv.svg" alt="closes"></img>
+					<img onClick={props.onClose} className="btnCloses" src="/img/btn-remuv.svg" alt="closes"></img>
 				</div>
 			
 			<div className="items">

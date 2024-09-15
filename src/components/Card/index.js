@@ -8,10 +8,11 @@ const handleClick = () => {
 	setIsAdded(!isAdded);  
   };
 
+
 	return(
 		<div className={styles.card}>
-				<div className={styles.favicon} onClick={props.onClickFavorite}>
-					<img src="/img/favicon.svg" alt="favicon"></img>
+				<div className={styles.favicon} onClick={handleClick}>
+					<img src={isAdded ? '/img/favicon-activ.svg' : '/img/favicon.svg'} alt="favicon"></img>
 				</div>
 				<img width={133} height={112} src={props.imageUrl} alt="snicers"></img>
 				<h3>{props.title}</h3>
