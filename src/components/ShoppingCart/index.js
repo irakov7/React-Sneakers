@@ -1,30 +1,23 @@
-function ShoppingCart(props){
+function ShoppingCart({onClose, onRemove, items =[]}){
 	return(
 	<div  className="overlay">
 		<div className="ShoppingCart">
 				<div className="cartTop">
 					<h2>Shopping Basket</h2>
-					<img onClick={props.onClose} className="btnCloses" src="/img/btn-remuv.svg" alt="closes"></img>
+					<img onClick={onClose} className="btnCloses" src="/img/btn-remuv.svg" alt="closes"></img>
 				</div>
 			
 			<div className="items">
-				<div className="cartItem">
-					<img width={70} height={70} src="/img/snicers/1.jpeg" alt="snicers"></img>
-					<div className="cartTitle">
-						<p>Men's Nike Air Max 270 Sneakers</p>
-						<b> 230 $</b>
+				{items.map((obj) => (
+					<div className="cartItem">
+						<img width={70} height={70} src={obj.imageUrl} alt="snicers"></img>
+						<div className="cartTitle">
+							<p>{obj.title}</p>
+							<b> {obj.price} $</b>
+						</div>
+						<img onClick={() => onRemove(obj.id)} className="removeBtn" src="/img/btn-remuv.svg" alt="remove"></img>
 					</div>
-					<img className="removeBtn" src="/img/btn-remuv.svg" alt="remove"></img>
-				</div>
-
-				<div className="cartItem">
-					<img width={70} height={70} src="/img/snicers/1.jpeg" alt="snicers"></img>
-					<div className="cartTitle">
-						<p>Men's Nike Air Max 270 Sneakers</p>
-						<b> 230 $</b>
-					</div>
-					<img className="removeBtn" src="/img/btn-remuv.svg" alt="remove"></img>
-				</div>
+				))}
 
 			</div>
 
