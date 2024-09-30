@@ -104,6 +104,39 @@ main{
 	}
 }
 
+.cartEmpty{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	h2{
+		font-size: 22px;
+		line-height: 27px;
+		letter-spacing: 0%;
+		padding: 21px 0 9px;
+		
+	}
+	
+	p{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		width: 285px;
+		margin-bottom: 40px;
+		text-align: center;
+		opacity: 0.4;
+	}
+	.btnBox{
+		border-radius: 18px;
+		background: rgb(157, 212, 88);
+		color:#FFFFFF;
+		width: 245px;
+		height: 55px;
+		cursor: pointer;
+	}
+}
+
 .cartTotalBloc{
 	
 		li{
